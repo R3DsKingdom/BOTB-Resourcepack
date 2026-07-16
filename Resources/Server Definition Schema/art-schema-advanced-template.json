@@ -1,0 +1,60 @@
+[
+    {
+        "id":"character",
+        "model": "somecharacter",
+        "artist":"Murray",
+        "flavor": "Epic flavour text that will appear after the character flavor",
+        "models":
+        [
+            {
+                "type": "good",
+                "model": "goodcharacter"
+            },
+            {
+                "type": "evil",
+                "model": "evilcharacter"
+            }
+        ],
+        "layers":
+        [
+            {
+                "layer": 3,
+                "style": "standard",
+                "color": [200,200,200],
+                "colors":
+                [
+                    {
+                        "type": "good",
+                        "style": "standard",
+                        "color": [0,255,255]
+                    }
+                ]
+            },
+            {
+                "layer": 0,
+                "style": "raw",
+                "colors":
+                [
+                    {
+                        "type": "good",
+                        "style": "standard",
+                        "color": [46,128,255]
+                    },
+                    {
+                        "type": "evil",
+                        "color": [255,128,16]
+                    },
+                    {
+                        "type": "loric",
+                        "color": [0,255,0]
+                    }
+                ]
+            },
+            {
+                "layer": 1,
+                "style": "none"
+            }
+        ]
+
+    }
+]

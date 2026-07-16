@@ -1,0 +1,60 @@
+[
+    {// Json does not support comments, do not use this as an example, a version without comments has been provided.
+        "id":"character",// the character id,
+        "model": "somecharacter",// [optional] model json name override
+        "artist":"Murray",// [optional] artist name
+        "flavor": "Epic flavour text that will appear after the character flavor",// [optional] additional flavour text for describing the art not the same as character flavor
+        "models":// [optional] model override data, can specify certain TokenStyles that will use a different model.
+        [
+            {
+                "type": "good", // specifys the TokenStyle, "good" ,"evil" ,"traveller" ,"fabled" ,"loric","reminder" (also used for blank),"storyteller", "storyteller_atheist" (gives traveller like storyteller evil split)
+                "model": "goodcharacter" // the model to use for this type instead of base
+            },
+            {
+                "type": "evil",
+                "model": "evilcharacter"
+            }
+        ],
+        "layers":// [optional] layer colour data, only specify layers you want to change, the layers have defaults specified elsewhere
+        [
+            {
+                "layer": 3, // layer id (same as specified in resourcepack model jsons)
+                "style": "standard", // [optional] Colouring Style, "none" (no colour data; static image),"raw" (use as the colour), "standard" (modulation with team colour), "mix" (mathematical mix with team colour), "dye" (Leather Armour like mix with team colour), "procedural" (uses the character seed  randomises colours)
+                "color": [200,200,200], // [optional] rgb colour defining the colour to use for this layer
+                "colors":// [optional] colors override data, can specify certain TokenStyles that will use a different color / style.
+                [
+                    {
+                        "type": "good", // specifys the TokenStyle, "good" ,"evil" ,"traveller" ,"fabled" ,"loric","reminder" (also used for blank),"storyteller", "storyteller_atheist" (gives traveller like storyteller evil split)
+                        "style": "standard", // [optional] style override for this TokenStyle.
+                        "color": [0,255,255] // [optional] color override for this TokenStyle.
+                    }
+                ]
+            },
+            {
+                "layer": 0, // layers can be specified in any order.
+                "style": "raw",
+                "colors":
+                [
+                    {
+                        "type": "good",
+                        "style": "standard",
+                        "color": [46,128,255]
+                    },
+                    {
+                        "type": "evil",
+                        "color": [255,128,16]
+                    },
+                    {
+                        "type": "loric",
+                        "color": [0,255,0]
+                    }
+                ]
+            },
+            {
+                "layer": 1,
+                "style": "none"
+            }
+        ]
+
+    }
+]

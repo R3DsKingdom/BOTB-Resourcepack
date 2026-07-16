@@ -1,0 +1,15 @@
+[
+    {
+        "id":"baron",
+        "artist":"Karma",
+        "layers":
+        [
+            {
+                "layer": 3,
+                "style": "standard",
+                "color": [200,200,200]
+            }
+        ]
+
+    }
+]

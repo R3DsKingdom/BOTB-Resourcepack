@@ -1,0 +1,15 @@
+[
+    {
+        "id":"character",
+        "artist":"Murray",
+        "layers":
+        [
+            {
+                "layer": 3,
+                "style": "standard",
+                "color": [255,255,255]
+            }
+        ]
+
+    }
+]
